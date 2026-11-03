@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr" translate="no" class="notranslate">
-  <head><meta name="google" content="notranslate">
+<html lang="fr">
+  <head><script>/* Évite l'écran blanc quand Chrome traduit la page (React + nœuds texte remplacés) */
+(function(){if(typeof Node!=='function'||!Node.prototype)return;var r=Node.prototype.removeChild;
+Node.prototype.removeChild=function(c){if(c.parentNode!==this){if(c.parentNode){return r.call(c.parentNode,c)}return c}return r.apply(this,arguments)};
+var i=Node.prototype.insertBefore;Node.prototype.insertBefore=function(n,ref){if(ref&&ref.parentNode!==this){return this.appendChild(n)}return i.apply(this,arguments)};})();</script>
     <meta charset="utf-8" />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -31,7 +34,7 @@
       You need to enable JavaScript to run this app.
     </noscript>
     <!-- The root element for your Expo app. -->
-    <div id="root" class="notranslate" translate="no"></div>
-  <script src="/bori-minds/_expo/static/js/web/entry-bee8f1ba1185237cdac5041ef000685e.js" defer></script>
+    <div id="root"></div>
+  <script src="/bori-minds/_expo/static/js/web/entry-f21731b0dba789b2c37a6209b0f0c05f.js" defer></script>
 </body>
 </html>
